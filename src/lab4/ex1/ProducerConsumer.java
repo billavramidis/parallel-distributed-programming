@@ -13,8 +13,8 @@ public class ProducerConsumer {
 
 
 //		BufferSemMux buff = new BufferSemMux(); // Solution 1
-		BufferLockCond buff = new ex1.BufferLockCond(); // Solution 2
-//		BufferSyncCond buff = new ex1.BufferSyncCond(); // Solution 3
+		BufferLockCond buff = new BufferLockCond(); // Solution 2
+//		BufferSyncCond buff = new BufferSyncCond(); // Solution 3
 
 		Producer prod = new Producer(buff, noIterations, producerDelay);
 		Consumer cons = new Consumer(buff, consumerDelay);
